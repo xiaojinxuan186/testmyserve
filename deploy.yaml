@@ -1,0 +1,21 @@
+apps:
+  script: ./option.js    # ����ļ�
+  name: 'app'       # ��������
+  env:           # ��������
+   COMMON_VARIABLE: true
+  env_production:
+   NODE_ENV: production
+
+deploy:           # ����ű�
+ production:        # ��������
+  user: root      # ���������û���
+  host: 47.100.220.105   # ��������ip��ַ
+  port: 22        # ssh�˿�
+  ref: origin/master   # Ҫ��ȡ��git��֧
+  ssh_options: StrictHostKeyChecking=no # SSH ��Կ���
+  repo: https://github.com/xiaojinxuan186/testmyserve.git # Զ�ֿ̲��ַ
+  path: /testpm2/test    # ��ȡ��������ĳ��Ŀ¼��
+  pre-deploy: git fetch --all # ����ǰִ��
+  post-deploy: npm install && pm2 reload deploy.yaml --env production # �����ִ��
+  env:
+   NODE_ENV: production
