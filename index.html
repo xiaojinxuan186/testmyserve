@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset=utf-8>
+  <meta content="initial-scale=1,viewport-fit=cover,minimum-scale=1,maximum-scale=2,user-scalable=no,width=device-width"
+    name=viewport>
+  <title>陸大哥</title>
+  <link rel=stylesheet href=https://unpkg.com/vant/lib/vant-css/index.css> <link rel=stylesheet
+    href=https://at.alicdn.com/t/font_812822_dbajl585in.css> <link rel=stylesheet
+    href=https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.css> <link rel=stylesheet
+    href=https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css> <link rel=stylesheet
+    href=https://unpkg.com/mint-ui/lib/style.css> <script src=https://cdn.bootcss.com/jquery/3.1.1/jquery.min.js>
+    </script> <script src=http://res.wx.qq.com/open/js/jweixin-1.4.0.js> </script> <link
+    href=/static/css/app.92bcd330b0373ef421d6edd8fc87431c.css rel=stylesheet>
+</head>
+
+<body style="font-size: .14rem">
+  <div id=app></div>
+  <script>var dc = document.documentElement;
+    var autoSizie = function () {
+      var dw = dc.clientWidth;
+      var dpr = Math.min(window.devicePixelRatio, 3);
+      //dw / dpr > 750 && (dw = 750 * dpr);
+      window.remScale = dw / 750;
+      dc.style.fontSize = 200 * (dw / 750) + "px";
+      dc.dataset.dpr = dpr;
+    };
+    autoSizie();
+    window.addEventListener('resize', autoSizie, false);</script>
+  <script type=text/javascript src=/static/js/manifest.fbc6ab096c3606bc5e16.js> </script> <script type=text/javascript
+    src=/static/js/vendor.3a5037793e40359fd9ea.js> </script> <script type=text/javascript
+    src=/static/js/app.1752d5d67b68e359b717.js> </script> </body> </html>
