@@ -12,7 +12,7 @@ app.use('/admin_demo_api', proxy({
   target: 'https://guojiongwei.com/admin_demo_api',
   pathRewrite: {'^/admin_demo_api' : '/'},
   changeOrigin: true
-}))
+})) 
 app.use(history());
 app.use(compression())
 app.use(express.static(path.join(__dirname, '/dist')));//和上面是一样的
