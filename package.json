@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "option.js",
-  "scripts": {},
+  "scripts": {
+    "test": "node options.js"
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
